@@ -1,0 +1,50 @@
+{
+  "n_train": 4000,
+  "n_test": 1000,
+  "split_date": "2024-06-15 15:12:00",
+  "baseline": {
+    "roc_auc": 0.4957205130556937,
+    "logloss": 0.7497573215076875,
+    "features": [
+      "user_ctr",
+      "user_n",
+      "item_ctr",
+      "item_n",
+      "item_category"
+    ]
+  },
+  "llm_augmented": {
+    "roc_auc": 0.4892204237488595,
+    "logloss": 0.7822995292223881,
+    "features": [
+      "user_ctr",
+      "user_n",
+      "item_ctr",
+      "item_n",
+      "item_category",
+      "cat_ctr",
+      "user_cat_ctr",
+      "user_cat_n",
+      "user_item_n",
+      "item_rel_pop",
+      "user_click_view_ratio",
+      "user_category_affinity",
+      "repeat_interaction"
+    ],
+    "feature_importance": {
+      "item_ctr": 24.50950673595163,
+      "item_rel_pop": 23.94272897876146,
+      "user_category_affinity": 13.02588980765304,
+      "user_cat_ctr": 8.799535565824561,
+      "item_n": 7.769335324914941,
+      "user_ctr": 4.776480537885942,
+      "user_click_view_ratio": 4.294917319220994,
+      "user_cat_n": 3.754985339687489,
+      "item_category": 3.4367532561746805,
+      "user_n": 2.9322800161804676,
+      "user_item_n": 1.4748374360983882,
+      "cat_ctr": 1.282749681646446,
+      "repeat_interaction": 0.0
+    }
+  }
+}
